@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\menu_game_menu.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\menu\\game_menu.xml"
+    },
+    {
+        "merged": "com.example.app100.app-merged_res-34:/layout_markers_info.xml.flat",
+        "source": "com.example.app100.app-main-36:/layout/markers_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\layout_activity_markers.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\layout\\activity_markers.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\layout_marker_item.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\layout\\marker_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\layout_markers_info.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\layout\\markers_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\layout_activity_new.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\layout\\activity_new.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-merged_res-34:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\siwie\\.gradle\\daemon\\7.4\\com.example.app100.app-main-36:\\xml\\data_extraction_rules.xml"
+    }
+]

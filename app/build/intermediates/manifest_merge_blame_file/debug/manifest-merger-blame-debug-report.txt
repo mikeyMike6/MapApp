@@ -1,0 +1,252 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.app100"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+8-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml
+10
+11    <!-- Include required permissions for Google Maps API to run. -->
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+13-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:22-64
+14
+15    <uses-feature
+15-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+16        android:glEsVersion="0x00020000"
+16-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+17        android:required="true" />
+17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+18
+19    <queries>
+19-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+20
+21        <!-- Needs to be explicitly declared on Android R+ -->
+22        <package android:name="com.google.android.apps.maps" />
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+22-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+23    </queries>
+24
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\009b7d12bc6043f22bf7aa6881a3ca54\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:5-68
+25-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\009b7d12bc6043f22bf7aa6881a3ca54\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:24:22-65
+26    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+26-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\009b7d12bc6043f22bf7aa6881a3ca54\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
+26-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\009b7d12bc6043f22bf7aa6881a3ca54\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+27-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+28
+29    <application
+29-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:5:5-50:19
+30        android:allowBackup="true"
+30-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:6:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.8.0] C:\Users\siwie\.gradle\caches\transforms-3\102215101d21fdb02f0f27bbfd4ebd5d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+32        android:dataExtractionRules="@xml/data_extraction_rules"
+32-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:7:9-65
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:fullBackupContent="@xml/backup_rules"
+35-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:8:9-54
+36        android:icon="@mipmap/ic_launcher"
+36-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:9:9-43
+37        android:label="@string/app_name"
+37-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:10:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:11:9-54
+39        android:supportsRtl="true"
+39-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:12:9-35
+40        android:testOnly="true"
+41        android:theme="@style/Theme.APP100" >
+41-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:13:9-44
+42        <activity
+42-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:15:9-21:20
+43            android:name="com.example.app100.MarkersActivity"
+43-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:16:13-44
+44            android:layout="@layout/activity_markers" >
+44-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:17:13-54
+45            <meta-data
+45-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:18:13-20:36
+46                android:name="android.app.lib_name"
+46-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:19:17-52
+47                android:value="" />
+47-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:20:17-33
+48        </activity>
+49
+50        <meta-data
+50-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:23:9-25:71
+51            android:name="com.google.android.geo.API_KEY"
+51-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:24:13-58
+52            android:value="AIzaSyDIE5JHJiRYUQXCacSSlBNLTW-Cto6kJS0" />
+52-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:25:13-68
+53
+54        <activity
+54-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:27:9-39:20
+55            android:name="com.example.app100.MainActivity"
+55-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:28:13-41
+56            android:exported="true" >
+56-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:29:13-36
+57            <intent-filter>
+57-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:30:13-34:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:31:17-69
+58-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:31:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:33:17-77
+60-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:33:27-74
+61            </intent-filter>
+62
+63            <meta-data
+63-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:18:13-20:36
+64                android:name="android.app.lib_name"
+64-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:19:17-52
+65                android:value="" />
+65-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:20:17-33
+66        </activity>
+67        <activity
+67-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:40:9-48:20
+68            android:name="com.example.app100.NewActivity"
+68-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:41:13-40
+69            android:exported="true"
+69-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:43:13-36
+70            android:layout="@layout/activity_new" >
+70-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:42:13-50
+71            <intent-filter>
+71-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:30:13-34:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:31:17-69
+72-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:31:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:33:17-77
+74-->C:\Users\siwie\AndroidStudioProjects\APP100\app\src\main\AndroidManifest.xml:33:27-74
+75            </intent-filter>
+76        </activity>
+77
+78        <!-- Needs to be explicitly declared on P+ -->
+79        <uses-library
+79-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+80            android:name="org.apache.http.legacy"
+80-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+81            android:required="false" />
+81-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\c810a7fa5da0076e425e66817ea5396a\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+82
+83        <service
+83-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\siwie\.gradle\caches\transforms-3\f860139b7c6cd9323f36245baf1fc28f\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:16:9-22:19
+84            android:name="com.google.firebase.components.ComponentDiscoveryService"
+84-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\siwie\.gradle\caches\transforms-3\f860139b7c6cd9323f36245baf1fc28f\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:17:13-84
+85            android:directBootAware="true"
+85-->[com.google.firebase:firebase-common:20.2.0] C:\Users\siwie\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+86            android:exported="false" >
+86-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\siwie\.gradle\caches\transforms-3\f860139b7c6cd9323f36245baf1fc28f\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:18:13-37
+87            <meta-data
+87-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\siwie\.gradle\caches\transforms-3\f860139b7c6cd9323f36245baf1fc28f\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:19:13-21:85
+88                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+88-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\siwie\.gradle\caches\transforms-3\f860139b7c6cd9323f36245baf1fc28f\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:20:17-111
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\siwie\.gradle\caches\transforms-3\f860139b7c6cd9323f36245baf1fc28f\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:21:17-82
+90            <meta-data
+90-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\009b7d12bc6043f22bf7aa6881a3ca54\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+91                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+91-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\009b7d12bc6043f22bf7aa6881a3ca54\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\009b7d12bc6043f22bf7aa6881a3ca54\transformed\play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\siwie\.gradle\caches\transforms-3\2bd4b07a485ee83d535408414d8e5dde\transformed\firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+94                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+94-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\siwie\.gradle\caches\transforms-3\2bd4b07a485ee83d535408414d8e5dde\transformed\firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\siwie\.gradle\caches\transforms-3\2bd4b07a485ee83d535408414d8e5dde\transformed\firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+96        </service>
+97
+98        <provider
+98-->[com.google.firebase:firebase-common:20.2.0] C:\Users\siwie\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+99            android:name="com.google.firebase.provider.FirebaseInitProvider"
+99-->[com.google.firebase:firebase-common:20.2.0] C:\Users\siwie\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+100            android:authorities="com.example.app100.firebaseinitprovider"
+100-->[com.google.firebase:firebase-common:20.2.0] C:\Users\siwie\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+101            android:directBootAware="true"
+101-->[com.google.firebase:firebase-common:20.2.0] C:\Users\siwie\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+102            android:exported="false"
+102-->[com.google.firebase:firebase-common:20.2.0] C:\Users\siwie\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+103            android:initOrder="100" />
+103-->[com.google.firebase:firebase-common:20.2.0] C:\Users\siwie\.gradle\caches\transforms-3\480b3dae7120d0220412229c8f9a6223\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+104
+105        <activity
+105-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\siwie\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+106            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+106-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\siwie\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+107            android:exported="false"
+107-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\siwie\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+108            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+108-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\siwie\.gradle\caches\transforms-3\26b3666345201c303a3333024bb53271\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+109
+110        <receiver
+110-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+111            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+111-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+112            android:enabled="true"
+112-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+113            android:exported="false" >
+113-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+114        </receiver>
+115
+116        <service
+116-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+117            android:name="com.google.android.gms.measurement.AppMeasurementService"
+117-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+118            android:enabled="true"
+118-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+119            android:exported="false" />
+119-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+120        <service
+120-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+121            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+121-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+122            android:enabled="true"
+122-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+124            android:permission="android.permission.BIND_JOB_SERVICE" />
+124-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\siwie\.gradle\caches\transforms-3\850228bafd88a158c87c2f70f2d17e0e\transformed\play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+125
+126        <meta-data
+126-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\0ccd676f36a88f843cf47f86b0f66e38\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+127            android:name="com.google.android.gms.version"
+127-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\0ccd676f36a88f843cf47f86b0f66e38\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+128            android:value="@integer/google_play_services_version" />
+128-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\siwie\.gradle\caches\transforms-3\0ccd676f36a88f843cf47f86b0f66e38\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+129
+130        <provider
+130-->[androidx.emoji2:emoji2:1.2.0] C:\Users\siwie\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+131            android:name="androidx.startup.InitializationProvider"
+131-->[androidx.emoji2:emoji2:1.2.0] C:\Users\siwie\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+132            android:authorities="com.example.app100.androidx-startup"
+132-->[androidx.emoji2:emoji2:1.2.0] C:\Users\siwie\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+133            android:exported="false" >
+133-->[androidx.emoji2:emoji2:1.2.0] C:\Users\siwie\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+134            <meta-data
+134-->[androidx.emoji2:emoji2:1.2.0] C:\Users\siwie\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+135                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+135-->[androidx.emoji2:emoji2:1.2.0] C:\Users\siwie\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+136                android:value="androidx.startup" />
+136-->[androidx.emoji2:emoji2:1.2.0] C:\Users\siwie\.gradle\caches\transforms-3\2ed499a9972c76584289d61187c198e3\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+137            <meta-data
+137-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\siwie\.gradle\caches\transforms-3\4f04b5d013d4e9a91b26580011dee398\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+138                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+138-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\siwie\.gradle\caches\transforms-3\4f04b5d013d4e9a91b26580011dee398\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+139                android:value="androidx.startup" />
+139-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\siwie\.gradle\caches\transforms-3\4f04b5d013d4e9a91b26580011dee398\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+140        </provider>
+141    </application>
+142
+143</manifest>

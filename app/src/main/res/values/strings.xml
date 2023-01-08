@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">APP100</string>
+    <string name="new_game">New Game</string>
+    <string name="help">Help</string>
+    <string name="show_roades">Show roades</string>
+    <string name="save_road">Save road</string>
+    <string name="show_markers_info">Show markers info</string>
+</resources>
