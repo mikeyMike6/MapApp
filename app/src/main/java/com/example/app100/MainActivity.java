@@ -1,5 +1,7 @@
 package com.example.app100;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,11 +12,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -38,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     private boolean startedNewGame = false;
     private String documentId;
     private GoogleMap mMap;
-    private MarkerList actual_markers;
     List<MarkerOptions> markers = new ArrayList<>();
 
     @Override
@@ -50,15 +54,25 @@ public class MainActivity extends AppCompatActivity {
         mapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {
-
                 mMap = googleMap;
+                List<LatLng> list = getIntent().getParcelableArrayListExtra("latLngList");
+                if (list != null && list.size() > 1) {
+                    CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLng(list.get(0));
+                    googleMap.animateCamera(cameraUpdate);
+                    Log.d(TAG, "Lista: " + list.toString());
+                    for (LatLng latLng: list) {
+                        addMarker(latLng);
+                    }
+                }
+                else {
+                    Log.d(TAG, "Lista pusta");
+                }
                 googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
                     @Override
                     public void onMapClick(@NonNull LatLng latLng) {
                         if (startedNewGame) {
-                            MarkerOptions marker= new MarkerOptions().position(latLng);
-                            googleMap.addMarker(marker);
-                            markers.add(marker);
+                            markers.add(new MarkerOptions().position(latLng));
+                            addMarker(latLng);
                         }
                     }
                 });
@@ -66,11 +80,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    public void addMarkers(List<MarkerOptions> markers) {
-        ClearMarkers();
-        for (MarkerOptions marker : markers) {
-            mMap.addMarker(marker);
-        }
+    public void addMarker(LatLng latLng) {
+        MarkerOptions marker = new MarkerOptions().position(latLng);
+        mMap.addMarker(marker);
     }
 
     @Override
@@ -130,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.show_roades:
                 Intent intent = new Intent(MainActivity.this, NewActivity.class);
                 startActivity(intent);
+                finish();
                 return true;
             case R.id.save_road:
                 startedNewGame = false;
