@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
@@ -17,6 +18,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 
+import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.maps.android.PolyUtil;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -30,6 +33,10 @@ import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.gson.Gson;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -53,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onMapReady(GoogleMap googleMap) {
                 mMap = googleMap;
+                LatLng startLocation = new LatLng(49.822, 19.042);
+                googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(startLocation, 12));
+
                 List<LatLng> latLngList = getIntent().getParcelableArrayListExtra("latLngList");
                 if (latLngList != null && latLngList.size() > 1) {
                     CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLng(latLngList.get(0));
@@ -178,16 +188,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void processJsonData(String result) {
-        Log.d(TAG, "PROCES_JSON_DATA_STRING: " + result);
-        Gson gson = new Gson();
-        DirectionsResponse directionsResponse = gson.fromJson(result, DirectionsResponse.class);
-        List<LatLng> latLngList = new ArrayList<>();
-        for(Step step: directionsResponse.getRoutes().getLegs().get(0).getSteps()) {
-            // latLngList.add(directionResponse.getStartLocation());
-            // latLngList.add(directionResponse.getEndLocation());
-        }
+    public void processJsonData(String result) throws JSONException {
+        JSONObject jsonResponse = new JSONObject(result);
+        JSONArray routes = jsonResponse.getJSONArray("routes");
+        JSONObject route = routes.getJSONObject(0);
+        JSONObject polyline = route.getJSONObject("overview_polyline");
+        String encodedPolyline = polyline.getString("points");
 
+        Log.d(TAG, "EncodedPolyline: " + encodedPolyline);
+        List<LatLng> decodedPath = PolyUtil.decode(encodedPolyline);
+        PolylineOptions options = new PolylineOptions().width(5).color(Color.BLUE).addAll(decodedPath);
+        mMap.addPolyline(options);
     }
 
     private void SaveRoad() {

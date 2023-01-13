@@ -5,6 +5,8 @@ import static android.content.ContentValues.TAG;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import org.json.JSONException;
+
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 
@@ -18,6 +20,7 @@ public class AsyncDirectionsApiTask extends AsyncTask<Void, Void, String> {
     public AsyncDirectionsApiTask(MainActivity mainActivity, String url) {
         activityRef = new WeakReference<>(mainActivity);
         mUrl = url;
+        Log.d(TAG, "URL: " + mUrl);
     }
     @Override
     protected void onPreExecute() {
@@ -43,7 +46,11 @@ public class AsyncDirectionsApiTask extends AsyncTask<Void, Void, String> {
         else {
             Log.d(TAG, "jsonData: " + result);
             MainActivity activity = activityRef.get();
-            activity.processJsonData(result);
+            try {
+                activity.processJsonData(result);
+            } catch (JSONException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 

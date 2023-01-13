@@ -17,8 +17,8 @@ public class DirectionsApiUrlBuilder {
         double destLat =  latLngList.get(latLngList.size() - 1).latitude;
         double destLng = latLngList.get(latLngList.size() - 1).longitude;
 
-        urlBuilder.append("origin=").append(originLat).append(",").append(originLng);
-        urlBuilder.append("&destination=").append(destLat).append(",").append(destLng);
+        urlBuilder.append("destination=").append(destLat).append(",").append(destLng);
+        urlBuilder.append("&origin=").append(originLat).append(",").append(originLng);
 
         if(latLngList != null && !latLngList.isEmpty()) {
             urlBuilder.append("&waypoints=");
@@ -32,6 +32,8 @@ public class DirectionsApiUrlBuilder {
             }
         }
         urlBuilder.append("&key=").append(API_KEY);
+        urlBuilder.append("&exclude=geocoded_waypoints");
+        urlBuilder.append("&exclude=routes");
         return urlBuilder.toString();
     }
 }
