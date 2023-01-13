@@ -10,7 +10,6 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Menu;
@@ -24,15 +23,14 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.gson.Gson;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -55,14 +53,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onMapReady(GoogleMap googleMap) {
                 mMap = googleMap;
-                List<LatLng> list = getIntent().getParcelableArrayListExtra("latLngList");
-                if (list != null && list.size() > 1) {
-                    CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLng(list.get(0));
+                List<LatLng> latLngList = getIntent().getParcelableArrayListExtra("latLngList");
+                if (latLngList != null && latLngList.size() > 1) {
+                    CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLng(latLngList.get(0));
                     googleMap.animateCamera(cameraUpdate);
-                    Log.d(TAG, "Lista: " + list.toString());
-                    for (LatLng latLng: list) {
+                    Log.d(TAG, "latLngList: " + latLngList.toString());
+                    for (LatLng latLng: latLngList) {
                         addMarker(latLng);
                     }
+                    String url = DirectionsApiUrlBuilder.buildUrl(latLngList);
+                    new AsyncDirectionsApiTask(MainActivity.this, url).execute();
+
+                    Log.d(TAG, "URL: " + url);
                 }
                 else {
                     Log.d(TAG, "Lista pusta");
@@ -175,6 +177,17 @@ public class MainActivity extends AppCompatActivity {
                 googleMap.clear();
             }
         });
+    }
+    public void processJsonData(String result) {
+        Log.d(TAG, "PROCES_JSON_DATA_STRING: " + result);
+        Gson gson = new Gson();
+        DirectionsResponse directionsResponse = gson.fromJson(result, DirectionsResponse.class);
+        List<LatLng> latLngList = new ArrayList<>();
+        for(Step step: directionsResponse.getRoutes().getLegs().get(0).getSteps()) {
+            // latLngList.add(directionResponse.getStartLocation());
+            // latLngList.add(directionResponse.getEndLocation());
+        }
+
     }
 
     private void SaveRoad() {
